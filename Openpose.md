@@ -16,6 +16,7 @@ change the cuda version in the dockerfile
 
 ```
 # convert the dockerfile to the *.def file
-spython recipe Dockerfile &> Singularity.def
+spython recipe Dockerfile &> openpose.def
+singularity build --remote openpose.sif openpose.def
 ```
 
