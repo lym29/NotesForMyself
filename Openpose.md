@@ -4,7 +4,7 @@ Since I need to use the openpose on a HPC sever, I started to learn how to use s
 pip install spython
 ```
 
-## Prepare container
+## Prepare Container （build on server)
 
 fork the dockerfile from [https://github.com/myoshimi/openpose-docker](https://github.com/myoshimi/openpose-docker.git)
 
@@ -19,4 +19,7 @@ change the cuda version in the dockerfile
 spython recipe Dockerfile &> openpose.def
 singularity build --remote openpose.sif openpose.def
 ```
+## Prepare Container (build on local)
+Need to create a new docker builder
+https://prinsss.github.io/build-x86-docker-images-on-an-m1-macs/
 
