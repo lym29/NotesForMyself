@@ -25,3 +25,17 @@ pip install spython
 ```
 singularity exec cwaffles_openpose.sif /bin/bash
 ```
+### Install openpose
+```
+[Singularity> cd openpose
+[Singularity> mkdir build && cd build
+[Singularity> cmake-gui ..
+[Singularity> make -j32
+```
+**An annoying problem I met:** 
+```
+nvcc fatal   : Unsupported gpu architecture 'compute_80'
+```
+**Solution:** Find from this [issue](https://github.com/NVIDIA/cuda-samples/issues/44) remove the "80 86" from the CUDA_ARCH_BIN args in the CMake config.
+![image](https://github.com/lym29/NotesForMyself/assets/42018173/0d626447-ca88-4fef-8b31-7b526c5f2599)
+
