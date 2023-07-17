@@ -1,5 +1,6 @@
 ## Environment
-Since I need to use the openpose on a HPC sever, I started to learn how to use singularity container
+I am attempting to use the openpose on a HPC sever, so starting to learn how to use singularity container.  
+spython can convert Dockerfile into singularity definition file
 ```
 pip install spython
 ```
