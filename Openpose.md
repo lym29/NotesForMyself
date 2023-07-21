@@ -9,7 +9,7 @@ pip install spython
 - Option 1: **build on server**  
   Pull from the dockhub
   ```
-  singularity pull cwaffles_openpose.sif dock://cwaffles/openpose:latest
+  singularity pull cwaffles_openpose.sif docker://cwaffles/openpose:latest
   ```
 
 - Option 2: **build on local**  
