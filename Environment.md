@@ -1,4 +1,4 @@
-## Environment
+## Openpose
 I am attempting to use the openpose on a HPC sever, so starting to learn how to use singularity container.  
 spython can convert Dockerfile into singularity definition file
 ```
@@ -40,3 +40,6 @@ nvcc fatal   : Unsupported gpu architecture 'compute_80'
 **Solution:** Find from this [issue](https://github.com/NVIDIA/cuda-samples/issues/44). Need to remove the "80 86" from the CUDA_ARCH_BIN args in the CMake config.
 ![image](https://github.com/lym29/NotesForMyself/assets/42018173/0d626447-ca88-4fef-8b31-7b526c5f2599)
 
+
+## ROS
+pull a ubuntu image from docker, run the container and install ros in it.
