@@ -42,4 +42,5 @@ nvcc fatal   : Unsupported gpu architecture 'compute_80'
 
 
 ## ROS
-pull a ubuntu image from docker, run the container and install ros in it.
+pull a ubuntu image from docker, run the container and install ros in it.  
+[Installation](http://wiki.ros.org/noetic/Installation/Ubuntu)
