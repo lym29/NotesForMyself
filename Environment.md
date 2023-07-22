@@ -43,4 +43,8 @@ nvcc fatal   : Unsupported gpu architecture 'compute_80'
 
 ## ROS
 pull a ubuntu image from docker, run the container and install ros in it.  
-[Installation](http://wiki.ros.org/noetic/Installation/Ubuntu)
+[Installation](http://wiki.ros.org/noetic/Installation/Ubuntu)  
+
+Got network issues when init the rosdep
+find solution [here](https://www.debugpoint.com/failed-connect-raw-githubusercontent-com-port-443/)  
+Following the first step, the problem is solved.
