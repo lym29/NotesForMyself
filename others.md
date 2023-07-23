@@ -4,3 +4,6 @@
 ```
 conda config --set restore_free_channel true
 ```
+
+运行ros
+https://zhuanlan.zhihu.com/p/85664330
