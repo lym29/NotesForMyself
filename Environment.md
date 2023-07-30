@@ -48,3 +48,27 @@ pull a ubuntu image from docker, run the container and install ros in it.
 Got network issues when init the rosdep
 find solution [here](https://www.debugpoint.com/failed-connect-raw-githubusercontent-com-port-443/)  
 Following the first step, the problem is solved.
+
+## Open3d
+Dockerfile for Open3d
+```
+# This could also be another Ubuntu or Debian based distribution
+FROM ubuntu:22.04
+
+# Install Open3D system dependencies and pip
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    libegl1 \
+    libgl1 \
+    libgomp1 \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Open3D from the PyPI repositories
+RUN python3 -m pip install --no-cache-dir --upgrade pip && \
+    python3 -m pip install --no-cache-dir --upgrade open3d
+```
+Use spython to convert it into singularity definition file.  
+```
+spython recipe Dockerfile open3d.def
+singularity build --remote open3d.sif open3d.defsingularity build --remote open3d.sif open3d.def
+```
