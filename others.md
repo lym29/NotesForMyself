@@ -7,3 +7,7 @@ conda config --set restore_free_channel true
 
 运行ros
 https://zhuanlan.zhihu.com/p/85664330
+
+
+服务器X11 forwarding相关设置
+https://stackoverflow.com/questions/38961495/x11-forwarding-request-failed-on-channel-0
