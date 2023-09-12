@@ -72,3 +72,15 @@ Use spython to convert it into singularity definition file.
 spython recipe Dockerfile open3d.def
 singularity build --remote open3d.sif open3d.defsingularity build --remote open3d.sif open3d.def
 ```
+
+## Unidexgrasp
+> ".../miniconda/envs/unidexgrasp/lib/python3.8/site-packages/torch/utils/tensorboard/__init__.py", line 4, in <module>  
+> LooseVersion = distutils.version.LooseVersion  
+> AttributeError: module 'distutils' has no attribute 'version'
+>
+```
+pip uninstall setuptools
+pip install setuptools==59.5.0
+```
+
+
