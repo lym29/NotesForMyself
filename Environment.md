@@ -84,3 +84,12 @@ pip install setuptools==59.5.0
 ```
 
 
+## psbody-mesh
+makefile issues when using python 3.8 to install psbody-mesh
+```
+no such option: --install-option
+make: *** [Makefile:7: all] Error 
+```
+[Solution](https://github.com/MPI-IS/mesh/issues/89)
+
+
