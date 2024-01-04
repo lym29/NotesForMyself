@@ -13,7 +13,8 @@
 
 [Containerize a conda environment in a Singularity container](https://stackoverflow.com/questions/54678805/containerize-a-conda-environment-in-a-singularity-container)
 
-**Network**
+**Network** 
+
 If connection to github fails, add the below config to "~/.ssh/config" file:
 ```
 Host github.com
